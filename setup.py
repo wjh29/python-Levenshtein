@@ -2,13 +2,13 @@ from setuptools import setup, find_packages
 import os
 
 from distutils.core import Extension
-
+# import file
 version = '0.10.2'
 
 extLevensthein = Extension('Levenshtein',
                            sources = ['Levenshtein.c'],
                            )
-
+# string
 setup(name='python-Levenshtein',
       version=version,
       description="Python extension computing string distances and similarities.",
@@ -25,6 +25,7 @@ setup(name='python-Levenshtein',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=[],
+      # function
       include_package_data=True,
       zip_safe=False,
       ext_modules = [extLevensthein],
